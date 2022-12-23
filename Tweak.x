@@ -1,10 +1,7 @@
 
-
 #import <ChatKit/CKConversation.h>
 #import <UIKit/UIKit.h>
 #import <UIKit/UIControl.h>
-
-
 
 #define PLIST @"com.majid.welcome"
 static NSString *GetNSString(NSString *pkey, NSString *defaultValue){
@@ -19,12 +16,6 @@ static BOOL GetBool(NSString *pkey, BOOL defaultValue) {
  return [Dict objectForKey:pkey] ? [[Dict objectForKey:pkey] boolValue] : defaultValue;
 }
 
-
-
-
-
-
-
 %hook SpringBoard
 - (void) applicationDidFinishLaunching:
 (id)application{
@@ -34,10 +25,6 @@ GetNSString(@"prefName", @"Default text");
  %orig;
 BOOL Enable = GetBool(@"srre", NO);
 
-
-
-
-
 if (Enable) { 
 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Welcome" 
 message:welcomeMessage
@@ -46,8 +33,4 @@ cancelButtonTitle:@"OK"
 otherButtonTitles:nil];
    [alert show];
 }
-}
-
-
-
 %end
