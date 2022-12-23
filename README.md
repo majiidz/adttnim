@@ -1,2 +1,2 @@
 # adttnim
-Fyhhg
+#Show welcome message after reboot🌠
