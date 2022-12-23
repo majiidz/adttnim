@@ -38,14 +38,14 @@ BOOL Enable = GetBool(@"srre", NO);
 
 
 
-if (Enable) { //added
+if (Enable) { 
 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Welcome" 
 message:welcomeMessage
  delegate:nil
 cancelButtonTitle:@"OK"
 otherButtonTitles:nil];
    [alert show];
-}//added
+}
 }
 
 
