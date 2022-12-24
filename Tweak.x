@@ -24,7 +24,7 @@ GetNSString(@"prefName", @"Default text");
 
  %orig;
 BOOL Enable = GetBool(@"srre", NO);
-
+//add
 if (Enable) { 
 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Welcome" 
 message:welcomeMessage
