@@ -1,6 +1,8 @@
 # adttnim
 #Show welcome message after reboot🌠
 
+#new
+Support = rootless
 
 
 
